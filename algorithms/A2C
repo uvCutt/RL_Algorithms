@@ -16,24 +16,17 @@ class Params:
     action_space_size = 0
     state_space_size = 0
     hidden_dim = 128
+
     # 学习率和折扣率
     actor_lr = 0.001
     critic_lr = 0.001
     gamma = 0.99
 
-    # 探索率
-    epsilon = 0.01
-
     # 训练次数以及每次最大步长
     epochs = 1000
     episode_len = 200
-    # 经验回放池大小
-    replay_buffer_size = 1000
 
-    batch_size = 64
-
-    # 更新target的频率以及保存频率
-    target_update_freq = 5
+    # 保存频率
     save_freq = 10
 
 
