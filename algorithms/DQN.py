@@ -60,7 +60,7 @@ class MLP(nn.Module):
 class ReplayBuffer(object):
     def __init__(self, capacity: int):
         """
-        DQN贡献之一: 经验回访池, 打破数据时间相关性
+        DQN贡献之一: 经验回放池, 打破数据时间相关性
         通用经验回放池，利用队列来进行维护，先入先出
         :param capacity: 经验回放池大小
         """
