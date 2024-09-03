@@ -172,6 +172,7 @@ class SAC:
         """
         跟AC不同的是, 用带信息熵的优势函数进行离线学习，用了Double DQN的思想解决过高估计, 再加上软更新的Trick
         注意这里Critic和Actor都要计算熵作为惩罚项, 最大信息熵, 增加探索性
+        !!!按道理来说softmax之后动作不存在0的情况为啥log还要加1e-8, 不加又会报错?
         :return: None
         """
         if len(self.replay_buffer) < self.params.batch_size:
